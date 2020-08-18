@@ -1,0 +1,112 @@
+@import url("_common.css");
+/* 헤더 */
+
+header .header__menu {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+header h1 {
+  font-size: 1.5rem;
+  color: rgb(100, 100, 100);
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+/* 네비게이션 */
+nav .nav__section--btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+nav .nav__imgBtn {
+  padding: 0;
+  margin: 10px 10px;
+  width: 50px;
+  height: 50px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav__imgBtn img {
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+}
+
+/* 메인 */
+.main__tab {
+  display: flex;
+  flex-direction: row;
+  width: 150px;
+  font-size: 1.5rem;
+  color: #fff;
+  padding: 5px 10px;
+}
+.main__tab figure {
+  padding: 0;
+  margin: 0;
+}
+.main__tab figure img {
+  width: 20px;
+  height: 20px;
+}
+.main__tab p {
+  padding: 0 10px;
+  margin: 0;
+  flex: 1;
+  font-style: italic;
+}
+
+.main__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main__content--wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-basis: auto;
+  color: #fff;
+  min-width: 80%;
+  min-height: 90%;
+}
+.main__content--itemwrapper {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+}
+.main__content--item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.main__content--innerItem {
+  flex: 1;
+}
+
+.main__content--wrapper h2,
+h3,
+h4 {
+  padding: 0;
+  margin: 0;
+  font-weight: 100;
+  font-family: "D2Coding";
+}
+.main__content--wrapper h2 {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.main__content--wrapper h3 {
+  font-size: 2.8rem;
+}
+
+.main__content--wrapper h4 {
+  font-size: 1.7rem;
+}

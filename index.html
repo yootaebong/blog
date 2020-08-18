@@ -1,14 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="kr">
 
 <head>
     <meta charset="UTF-8">
+    <link rel="preload" href="/Resources/fonts/D2Coding/D2Coding.woff2" as="font">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Bong's</title>
+
+    <link rel="stylesheet" type="text/css" href="./Styles/index.css">
 </head>
 
 <body>
-    테스트용
+    <header>
+        <div class="header__menu red--bg"></div>
+        <div class="header__menu yellow--bg"></div>
+        <div class="header__menu green--bg"></div>
+        <h1>시작</h1>
+    </header>
+    <section>
+        <nav>
+            <section class="nav__section--btn">
+                <figure class="nav__imgBtn">
+                    <img src="./Resources/person.svg" alt="bong's about button icon" />
+                </figure>
+                <figure class="nav__imgBtn">
+                    <img src="./Resources/fileIcon.svg" alt="post list button icon" />
+                </figure>
+                <figure class="nav__imgBtn">
+                    <img src="./Resources/calendar.svg" alt="bong's career button icon" />
+                </figure>
+            </section>
+            <section class="nav__section--list hidden">
+            </section>
+        </nav>
+        <main>
+            <header>
+                <div class="main__tab active--bottom">
+                    <figure>
+                        <img src="/Resources/icons/log.svg" alt="view log icon" />
+                    </figure>
+                    <p>시작</p>
+                    <figure>
+                        <img src="/Resources/close.svg" alt="view close button" />
+                    </figure>
+                </div>
+            </header>
+            <section class="main__content">
+                <div class="main__content--wrapper">
+                    <h2>Taebong Yoo</h2>
+                    <h3 class="gray">개발이 향상됨</h3>
+                    <div class="main__content--itemwrapper">
+                        <div class="main__content--item">
+                            <div class="main__content--innerItem">
+                                <h4>시작</h4>
+                            </div>
+                            <div class="main__content--innerItem">
+                                <h4>최근 항목</h4>
+                            </div>
+                            <div class="main__content--innerItem">
+                                <h4>도움말</h4>
+                            </div>
+                        </div>
+                        <div class="main__content--item">
+                            <div class="main__content--innerItem">
+                                <h4>사용자 지정</h4>
+                            </div>
+                            <div class="main__content--innerItem">
+                                <h4>알아보기</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </section>
+    <footer></footer>
     <script type="module" src="Routers/router.js"></script>
 </body>
 
