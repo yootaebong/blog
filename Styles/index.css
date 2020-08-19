@@ -1,7 +1,7 @@
 @import url("_common.css");
 /* 헤더 */
 
-header .header__menu {
+.header__menu {
   width: 15px;
   height: 15px;
   border-radius: 50%;
@@ -66,14 +66,15 @@ nav .nav__imgBtn {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0 20px;
 }
 .main__content--wrapper {
   display: flex;
   flex-direction: column;
   flex-basis: auto;
   color: #fff;
-  min-width: 80%;
-  min-height: 90%;
+  width: 85%;
+  height: 90%;
 }
 .main__content--itemwrapper {
   margin-top: 50px;
@@ -88,25 +89,140 @@ nav .nav__imgBtn {
 }
 .main__content--innerItem {
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .main__content--wrapper h2,
 h3,
-h4 {
-  padding: 0;
-  margin: 0;
+h4,
+h5,
+p {
   font-weight: 100;
-  font-family: "D2Coding";
 }
 .main__content--wrapper h2 {
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-weight: bold;
 }
 
 .main__content--wrapper h3 {
-  font-size: 2.8rem;
+  font-size: 2.3rem;
 }
 
 .main__content--wrapper h4 {
-  font-size: 1.7rem;
+  font-size: 1.8rem;
+}
+
+/* 섹션 내부 아이템 */
+.main__content--innerItem h5 {
+  font-size: 1.5rem;
+}
+.main__content--innerItem p {
+  font-size: 1.4rem;
+}
+.main__content--innerItem textarea {
+  font-size: 1.4rem;
+}
+.main__content--innerItem a {
+  text-decoration: none;
+  color: #fff;
+}
+.main__content--about h5 {
+  margin: 10px 0;
+}
+
+.main__content--categoryTitleWrapper {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.main__content--categoryTitleWrapper h5 {
+  margin: 10px 20px 10px 0;
+  width: min-content;
+  cursor: pointer;
+}
+
+.main__content--careerItem {
+  padding: 10px 10px;
+  margin: 15px 0;
+  background-color: rgba(0, 0, 0, 0.3);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  flex: 1;
+
+  max-height: 80px;
+}
+
+.main__content--message {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 0;
+  margin: 20px 0;
+}
+
+.main__content--consoleheader {
+  display: flex;
+  flex-direction: row;
+  padding: 2px 5px;
+  border-radius: 5px 5px 0 0;
+}
+
+.main__content--consoleheader h1 {
+  flex: 1;
+  text-align: center;
+}
+
+.main__content--consolebody {
+  flex: 1;
+  border-radius: 0 0 5px 5px;
+}
+.main__content--consoleline {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 10px 0;
+}
+.main__content--consoletext {
+  padding: 0 5px;
+  width: fit-content;
+}
+.main__content--consoleline textarea {
+  padding: 0 10px;
+  margin: 0;
+  border: none;
+  height: fit-content;
+  flex: 1;
+  resize: none;
+}
+.main__content--consoleline textarea:focus {
+  outline-width: 0;
+}
+
+/* 푸터 */
+footer {
+  justify-content: center;
+}
+footer figure {
+  padding: 0;
+  margin: 0;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+footer figure img {
+  width: 20px;
+  height: 20px;
+}
+
+footer figure figcaption {
+  padding: 0;
+  margin: 0;
+  font-size: 1.3rem;
+  margin: 0 20px 0 5px;
 }

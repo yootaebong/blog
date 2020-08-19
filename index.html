@@ -3,10 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="preload" href="/Resources/fonts/D2Coding/D2Coding.woff2" as="font">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bong's</title>
-
+    <title>Taebong</title>
+    <link rel="preload" href="/Resources/fonts/D2Coding/D2Coding.woff2" as="font">
     <link rel="stylesheet" type="text/css" href="./Styles/index.css">
 </head>
 
@@ -20,15 +19,21 @@
     <section>
         <nav>
             <section class="nav__section--btn">
-                <figure class="nav__imgBtn">
-                    <img src="./Resources/person.svg" alt="bong's about button icon" />
-                </figure>
-                <figure class="nav__imgBtn">
-                    <img src="./Resources/fileIcon.svg" alt="post list button icon" />
-                </figure>
-                <figure class="nav__imgBtn">
-                    <img src="./Resources/calendar.svg" alt="bong's career button icon" />
-                </figure>
+                <a href="/">
+                    <figure class="nav__imgBtn">
+                        <img src="./Resources/person.svg" alt="bong's about button icon" />
+                    </figure>
+                </a>
+                <a>
+                    <figure class="nav__imgBtn">
+                        <img src="./Resources/fileIcon.svg" alt="post list button icon" />
+                    </figure>
+                </a>
+                <a href="https://career.taebong.io" target="_blank">
+                    <figure class="nav__imgBtn">
+                        <img src="./Resources/calendar.svg" alt="bong's career button icon" />
+                    </figure>
+                </a>
             </section>
             <section class="nav__section--list hidden">
             </section>
@@ -48,25 +53,68 @@
             <section class="main__content">
                 <div class="main__content--wrapper">
                     <h2>Taebong Yoo</h2>
-                    <h3 class="gray">개발이 향상됨</h3>
+                    <h3 class="gray">Don't stop thinking</h3>
                     <div class="main__content--itemwrapper">
                         <div class="main__content--item">
-                            <div class="main__content--innerItem">
-                                <h4>시작</h4>
+                            <div class="main__content--innerItem main__content--about">
+                                <h4>About</h4>
+                                <h5 class="highlight">Softwear Engineer</h5>
+                                <h5 class="highlight">Github :
+                                    <a class="highlight" href="https://github.com/yootaebong"
+                                        target="_blank">yootaebong</a>
+                                </h5>
+                                <h5 class="highlight">Rocketpunch :
+                                    <a class="highlight" href="https://www.rocketpunch.com/@ytb4748"
+                                        target="_blank">ytb4748@gmail.com</a>
+                                </h5>
                             </div>
                             <div class="main__content--innerItem">
-                                <h4>최근 항목</h4>
+                                <h4>Categories</h4>
+                                <div class="main__content--categoryTitleWrapper">
+                                    <a href="/">
+                                        <h5 class="highlight">JavaScript</h5>
+                                    </a>
+                                </div>
                             </div>
                             <div class="main__content--innerItem">
-                                <h4>도움말</h4>
+                                <h4>Recent Posts</h4>
                             </div>
                         </div>
                         <div class="main__content--item">
                             <div class="main__content--innerItem">
-                                <h4>사용자 지정</h4>
+                                <a href="https://career.taebong.io" target="_blank">
+                                    <h4>Career</h4>
+                                </a>
+                                <div class="main__content--careerItem">
+                                    <h5 class="highlight">Teamnova (재직중)</h5>
+                                    <p>2019.04.15 ~ 2020 | 강의, Product Manager, Web Developer</p>
+                                </div>
+                                <div class="main__content--careerItem">
+                                    <h5 class="highlight">BestInvestment</h5>
+                                    <p>2018.10.01 ~ 2019.04.10 | Android, Windows FrontEnd Developer</p>
+                                </div>
+                                <div class="main__content--careerItem">
+                                    <h5 class="highlight">자세히..</h5>
+                                    <p><a href="https://career.taebong.io" target="_blank">https://career.taebong.io</a>
+                                    </p>
+                                </div>
                             </div>
                             <div class="main__content--innerItem">
-                                <h4>알아보기</h4>
+                                <h4>Contact ME</h4>
+                                <div class="main__content--message">
+                                    <div class="main__content--consoleheader lightgray-bg">
+                                        <div class="header__menu red--bg"></div>
+                                        <div class="header__menu yellow--bg"></div>
+                                        <div class="header__menu green--bg"></div>
+                                        <h1 class="">Send Message Console</h1>
+                                    </div>
+                                    <div class="main__content--consolebody black-bg">
+                                        <div class="main__content--consoleline">
+                                            <p class="main__content--consoletext darkgray">저에게 어떤 말을 해주실건가요?</p>
+                                            <textarea class="black-bg darkgray"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -74,7 +122,15 @@
             </section>
         </main>
     </section>
-    <footer></footer>
+    <footer class="white">
+        <figure>
+            <img src="/Resources/copyright.svg" alt="copyright image" />
+            <figcaption>2020</figcaption>
+            <img src="/Resources/design.svg" alt="design image" />
+            <figcaption>Design with VSCode, iTerm2</figcaption>
+        </figure>
+
+    </footer>
     <script type="module" src="Routers/router.js"></script>
 </body>
 
