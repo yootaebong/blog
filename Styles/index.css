@@ -132,6 +132,15 @@ p {
   margin: 10px 0;
 }
 
+.main__content--postWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.main__content--postWrapper h5 {
+  margin: 10px 0;
+}
+
 .main__content--categoryTitleWrapper {
   display: flex;
   flex-flow: row wrap;
@@ -163,6 +172,7 @@ p {
   flex-direction: column;
   flex-basis: 0;
   margin: 20px 0;
+  max-height: 500px;
 }
 
 .main__content--consoleheader {
